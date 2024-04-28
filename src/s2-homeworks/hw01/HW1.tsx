@@ -6,7 +6,7 @@ import FriendMessage from './friend-message/FriendMessage'
 import avatar from './avatar.png'
 
 /*
-* 1 - описать тип MessageType
+* 1 - описать тип MessageType ---
 * 2 - описать тип MessagePropsType в файле Message.tsx
 * 3 - в файле Message.tsx отобразить приходящие данные
 * 4 - выполнить пункты 2, 3 в файле FriendMessage.tsx
@@ -14,7 +14,19 @@ import avatar from './avatar.png'
 * */
 
 // нужно создать правильный тип вместо any
-export type MessageType = any
+export type UserType = {
+    avatar: string
+    name: string
+}
+export type TextMessageType = {
+  text: string
+  time: string
+}
+export type MessageType = {
+    id: number
+    user: UserType
+    message: TextMessageType
+}
 
 // структуру объекта не менять
 export const message0: MessageType = {

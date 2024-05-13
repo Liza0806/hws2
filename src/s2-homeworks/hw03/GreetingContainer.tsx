@@ -21,13 +21,11 @@ export const pureOnBlur = (name: string, setError: (error:string)=>void) => { //
         setError('error')
     }
 }
-
-export const pureOnEnter = (e: ChangeEvent<HTMLInputElement>, addUser: ()=>void) => { // если нажата кнопка Enter - добавить
-    if(e.key === 'Enter'){
-        addUser()
+export const pureOnEnter = (e: KeyboardEvent<HTMLInputElement>, addUser: () => void) => {
+    if (e.key === 'Enter') {
+        addUser();
     }
 }
-
 // более простой и понятный для новичков
 // function GreetingContainer(props: GreetingPropsType) {
 

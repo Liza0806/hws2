@@ -51,9 +51,6 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({
     }
 
     const onEnter = (e:KeyboardEvent<HTMLInputElement>) => {
-        if(!e.currentTarget.value){
-          return
-        }
         pureOnEnter(e, addUser)
     }
 

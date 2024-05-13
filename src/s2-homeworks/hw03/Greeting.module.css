@@ -1,35 +1,68 @@
 .greetingForm {
-}
-
-.inputAndButtonContainer {
+    margin: 20px;
 }
 
 .error {
+    margin: 10px 10px;
+    color: #C53030; /* красный цвет текста */
 }
 
 .input {
+    outline: none;
+    margin: 10px 10px;
+    border: 1px solid #38A169; /* зеленый цвет границы */
+    border-radius: 15px;
+    box-shadow: 0 0 10px 1px #38A169; /* зеленая тень */
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    transition-duration: .3s;
 }
 
 .input:focus {
+    box-shadow: 0 0 5px 1px #38A169; /* зеленая тень при фокусе */
+    transition-duration: .3s;
 }
 
 .errorInput {
+    outline: none;
+    margin: 10px 10px;
+    border: 1px solid #1A202C; /* красный цвет границы */
+    border-radius: 15px;
+
+    width: 150px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    transition-duration: .3s;
 }
 
 .button {
+    margin: 10px 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 1px #1A202C; /* тень синего цвета */
+    color: #1A202C; /* синий цвет текста */
+    background-color: #90CDF4; /* светло-голубой фон */
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    transition-duration: .3s;
 }
 
 .button:focus {
+    box-shadow: 0 0 5px 1px #90CDF4; /* светло-голубая тень при фокусе */
+    background-color: #2B6CB0; /* синий цвет фона при фокусе */
+    transition-duration: .3s;
 }
 
 .button:active {
+    box-shadow: 0 0 2px 1px #90CDF4; /* светло-голубая тень при активации */
+    background-color: #2C5282; /* темно-синий цвет фона при активации */
+    transition-duration: .3s;
 }
 
 .button:disabled {
-}
-
-.text {
-}
-
-.greeting {
+    background-color: #A0AEC0; /* серый цвет фона */
+    transition-duration: .3s;
 }

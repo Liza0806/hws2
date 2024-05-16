@@ -12,9 +12,9 @@ export const pureAddUser = (name: string, setError: (error:string)=>void, setNam
     if(name.trim().length === 0){
         setError('error')
     }
-setName('')
 addUserCallback(name)
-setError('');
+setName('')
+
 }
 
 export const pureOnBlur = (name: string, setError: (error:string)=>void) => { // если имя пустое - показать ошибку
